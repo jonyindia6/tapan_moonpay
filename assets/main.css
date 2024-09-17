@@ -1,0 +1,163 @@
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
+@import "./file.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: #B5B5B5 ;
+    height: 100vh;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.bg-primary-2 {
+    background-color: #13c2c2;
+}
+.text-primary-2 {
+    color: #4d84ff!important;
+}
+
+.btn-primary-2 {
+    background-color: #7d00ff;
+    border: 0px;
+    color: #FFF;
+}
+
+.btn-primary-2:hover, .btn-primary-2:active {
+    background-color: #5d00d1 !important;
+    border: 0px;
+    color: #fff !important;
+}
+.btn-secondary-2 {
+    background-color: #e0e0e0 !important;
+    border: 0px;
+    color: #000 !important;
+}
+
+.btn-primary-3 {
+    border: 2px solid #e7ebf2;
+    padding: 12px 15px;
+}
+
+.btn-primary-3:hover, .btn-primary-2:active {
+    border: 2px solid #4d84ff !important;
+}
+
+
+.form .inputField {
+    position: relative;
+}
+
+.form .inputField label {
+    position: absolute;
+    top: -11px;
+    left: 2%;
+    background-color: white;
+    padding: 0 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form .inputField input {
+    height: 55px;
+    border: 1px solid #bccad8;
+    border-radius: 8px;
+}
+
+
+h3.mobile_web_font .h3.mobile_web_font {
+    font-size: 36px;
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.form-control-add {
+    color: #8590a6;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 12px 16px;
+    border: 1px #e7ebf2 solid;
+}
+
+.form-control-add:focus {
+    color: #8590a6;
+    background-color: var(--bs-body-bg);
+    box-shadow: 0 0 0 .20rem rgb(221 228 237 / 10%);
+    border: 1px #e7ebf2 solid;
+}
+
+::-ms-input-placeholder {
+    color: #8590a6 !important;
+}
+
+::placeholder {
+    color: #8590a6 !important;
+}
+
+.header_menu {
+    a, a:hover, a:active, a.show, a:focus, .nav-link.show {
+        color: #fff;
+        font-size: 15px;
+    }
+    .nav-item {
+        padding: 0px 15px;
+    }
+    .dropdown-menu a {
+        color: #000;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+
+h1.mobile_web_font, .h1.mobile_web_font {
+    font-size: 50px;
+    @media (max-width: 768px) {
+        font-size: 26px;
+    }
+}
+
+h2.mobile_web_font, .h2.mobile_web_font {
+    font-size: 40px;
+    @media (max-width: 768px) {
+        font-size: 22px;
+    }
+}
+
+h3.mobile_web_font .h3.mobile_web_font {
+    font-size: 36px;
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+h4.mobile_web_font, .h4.mobile_web_font {
+    font-size: 32px;
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+h5.mobile_web_font, .h5.mobile_web_font {
+    font-size: 28px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+h6.mobile_web_font, .h6.mobile_web_font {
+    font-size: 24px;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
